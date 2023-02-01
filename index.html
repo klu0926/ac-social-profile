@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bounties Board</title>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <!--my css-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand">
+        <i class="fa-solid fa-skull fa-lg ms-2"></i>
+        <a class="navbar-brand ms-2 fw-bold" href="./index.html">BOUNTY</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link-target" class="nav-link" href="./target.html">Target()</a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--main container-->
+  <div class="container-fluid mt-4">
+    <!--search bar-->
+    <form class="row mb-2 mx-0 p-0" id="search-form">
+      <div class="col-sm-3 p-0 my-2 me-2">
+        <label class="visually-hidden" for="search-input">
+          Search Keyword
+        </label>
+        <input type="text" class="form-control" id="search-input" placeholder="target name...">
+      </div>
+      <button type="submit" class="btn btn-danger col-sm-3 col-md-2 p-0 my-2" id="search-submit">
+        Search
+      </button>
+    </form>
+    <!--bounty panel-->
+    <div class="row mx-0 p-0 justify-content-start" id="bounty-panel">
+      <!--bounty panel insert below-->
+
+      <!--bounty panel insert above-->
+    </div>
+
+      <!---pagination-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mb-5" id="pagination">
+            <!--insert page link here--->
+        </ul>
+      </nav>
+
+  </div>
+
+  <!--modal-->
+  <div class="modal fade" id="bounty-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--close btn-->
+        <div class="px-2 pt-2">
+          <button type="button" class="my-btn btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!--modal body-->
+        <div class="modal-body p-0 text-center">
+          <!--title-->
+          <p class="wanted-title display-2 fw-bold m-0 p-0 lh-1">WANTED</p>
+          <p class="wanted-title h2 fw-bold m-0 p-0">
+            <span class="fa-regular fa-hand-point-right"></span>
+            DEAD or ALIVE
+            <i class="fa-regular fa-hand-point-left"></i>
+          </p>
+          <p id="modal-price" class="wanted-title h1 fw-bold m-0 p-">$10,000,000</p>
+          <div id="modal-image" class="modal-image-box my-2">
+            <!--image below-->
+            <image src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="bounty photo"
+              class="border border-5">
+              <!--image above-->
+          </div>
+          <!--all into-->
+          <div class="modal-info mt-2 text-start ps-18%" id="modal-info">
+            <p class="m-0 p-0 h4 fw-bold" id="modal-name">Tudor Pogor</p>
+            <p class="m-0 p-0 lh-sm" id="modal-name">Sex: Male</p>
+            <p class="m-0 p-0 lh-sm" id="modal-age">Age: 29</p>
+            <p class="m-0 p-0 lh-sm" id="modal-birth">Birthday: 12/12/1990</p>
+            <p class="m-0 p-0 lh-sm" id="modal-region">Region: Romania</p>
+            <p class="m-0 p-0 lh-sm" id="modal-email">Email: something@gmail.com</p>
+          </div>
+        </div>
+        <!--modal footer-->
+        <div class="modal-footer border mt-3 pt-2 bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="modal-tracking-button" type="button" class="btn btn-danger">Start Tracking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--scrips-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+
+  <!--replit code-->
+  <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.modal-info {
+  padding-left: 18%;
+}
+
+.modal-image-box {
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid #6c757d;
+  overflow: hidden;
+  width: 50%;
+  max-height: 250px;
+}
+
+.zoom {
+  transform: scale(1.5);
+  transform-origin: bottom;
+  background: #dc3545;
+}
+
+.bounty-btn:hover img {
+  background-color: #dc3545;
+}
+
+.bounty-btn:hover p {
+  color: #dc3545;
+}
+
+.bounty-card:hover .fa-sharp{
+  color: white;
+}
